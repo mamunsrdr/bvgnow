@@ -78,8 +78,7 @@ export const DeparturesList: React.FC<DeparturesListProps> = ({
           <div className="no-departures-icon">🚫</div>
           <div className="no-departures-text">
             <h3>No departures available</h3>
-            <p>There are currently no scheduled departures from this stop.</p>
-            <p>This could mean:</p>
+            <p>There are currently no scheduled departures from this stop. This could mean:</p>
             <ul>
               <li>No services are running at this time</li>
               <li>The stop may not be in service</li>

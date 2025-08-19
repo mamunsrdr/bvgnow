@@ -4,40 +4,64 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#2196F3" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="BVG Now - Real-time departure information for Berlin's public transport system. Search BVG stops and get live departure times for buses, trams, subways, and more."
     />
+    <meta name="keywords" content="BVG, Berlin, public transport, real-time, departures, bus, tram, subway, S-Bahn, U-Bahn" />
+    <meta name="author" content="BVG Now" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="BVG Now - Real-time Berlin Transit" />
+    <meta property="og:description" content="Get real-time departure information for Berlin's public transport system" />
+    <meta property="og:url" content="https://bvgnow.app" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:title" content="BVG Now - Real-time Berlin Transit" />
+    <meta property="twitter:description" content="Get real-time departure information for Berlin's public transport system" />
+    
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- Preconnect to BVG API for faster loading -->
+    <link rel="preconnect" href="https://v6.bvg.transport.rest" />
+    
     <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
+      BVG Now - Real-time Berlin Transit Information
+      This application provides live departure times for Berlin's public transport system.
+      Built with React and TypeScript, powered by the BVG REST API.
     -->
-    <title>React App</title>
+    <title>BVG Now - Real-time Berlin Transit</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>
+      <div style="text-align: center; padding: 50px; font-family: Arial, sans-serif;">
+        <h1>🚌 BVG Now</h1>
+        <p>You need to enable JavaScript to use this real-time transit app.</p>
+        <p>Please enable JavaScript in your browser and reload the page.</p>
+      </div>
+    </noscript>
     <div id="root"></div>
     <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
+      BVG Now - Real-time Berlin Transit Information
+      
+      This React application provides real-time departure information for Berlin's 
+      public transport system (BVG). Features include:
+      
+      • Smart autocomplete search for BVG stops
+      • Live departure times for buses, trams, subways, and more
+      • Local storage for last searched location
+      • Responsive design for desktop and mobile
+      • Clean, modern interface with real-time updates
+      
+      Powered by the BVG REST API: https://v6.bvg.transport.rest
     -->
   </body>
 </html>
