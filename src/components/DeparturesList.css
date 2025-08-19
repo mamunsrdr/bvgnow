@@ -1,0 +1,168 @@
+.departures-container {
+  margin-top: 24px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.departures-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.departures-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.departure-item {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease;
+}
+
+.departure-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.departure-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.transport-icon {
+  font-size: 20px;
+}
+
+.line-name {
+  font-weight: 700;
+  font-size: 18px;
+  color: #2196f3;
+  background: #e3f2fd;
+  padding: 4px 8px;
+  border-radius: 6px;
+  min-width: 40px;
+  text-align: center;
+}
+
+.line-product {
+  font-size: 12px;
+  color: #666;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.departure-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.departure-direction {
+  font-weight: 500;
+  color: #333;
+  font-size: 16px;
+}
+
+.departure-time {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.planned-time {
+  font-weight: 600;
+  font-size: 18px;
+  color: #2e7d32;
+}
+
+.delay {
+  background: #ff5722;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.departure-destination {
+  font-size: 14px;
+  color: #666;
+  font-style: italic;
+}
+
+.loading {
+  text-align: center;
+  padding: 24px;
+  font-size: 16px;
+  color: #666;
+}
+
+.error {
+  text-align: center;
+  padding: 24px;
+  font-size: 16px;
+  color: #d32f2f;
+  background: #ffebee;
+  border-radius: 8px;
+  border: 1px solid #ffcdd2;
+}
+
+.last-updated {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+}
+
+.no-departures {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 24px;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.no-departures-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.no-departures-text h3 {
+  margin: 0 0 12px 0;
+  color: #666;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.no-departures-text p {
+  margin: 8px 0;
+  color: #666;
+  line-height: 1.5;
+}
+
+.no-departures-text ul {
+  text-align: left;
+  margin: 12px 0 0 0;
+  padding-left: 20px;
+  color: #666;
+}
+
+.no-departures-text li {
+  margin: 4px 0;
+  line-height: 1.4;
+}

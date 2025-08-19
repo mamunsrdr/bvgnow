@@ -1,0 +1,16 @@
+services:
+  bvgnow:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: bvgnow
+    ports:
+      - "3080:80"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.bvgnow.rule=Host(`localhost`)"
+      - "traefik.http.routers.bvgnow.entrypoints=web"
+      - "traefik.http.services.bvgnow.loadbalancer.server.port=80"
